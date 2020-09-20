@@ -310,9 +310,10 @@
 .go-topz{
   @include typo(.9em, $white, 900);
   z-index: 2000;
+  transition: color .3s ease-in-out;
   &:hover{
     cursor: pointer;
-    color: $secondary-color;
+    color: $secondary-color - 20;
   }
   @include responsive(tab-port){
     float: right;

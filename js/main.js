@@ -244,7 +244,7 @@ $(".menu-closer").click(function () {
 
 ////////////////////////////////////////////////@2020
 
-$('.el-brand').on('click', function () {
+$('.el-brand, .sbw-btn').on('click', function () {
   $('.rem-on-trans-box').remove();
   $('.el-hero-section').css({
     "padding-bottom": "7em"

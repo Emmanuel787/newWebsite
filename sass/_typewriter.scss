@@ -1,6 +1,6 @@
 .typewriter{
-	@include typo(2em, rgba(255,255,255,.70), null);
-  border-right: solid 3px $white;
+	@include typo(2em, $white, null);
+  border-right: solid 3px $secondary-color;
   white-space: nowrap;
   overflow: hidden;
   font-family: 'Source Code Pro', monospace;

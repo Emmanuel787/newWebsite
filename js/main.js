@@ -259,9 +259,6 @@ $('.go-home').on('click', function () {
   // });
   $('.el-main-header').fadeOut(500);
 
-  $('.section-dos').css({
-    "background": "#1f1f1f"
-  });
 });
 
 ////////////////////////////////////////////////@2020

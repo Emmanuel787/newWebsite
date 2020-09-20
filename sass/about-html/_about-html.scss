@@ -48,8 +48,9 @@
   min-height: 40em;
   position: absolute;
   bottom: -7em; right: 3em;
-  animation: showImg 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation: showImg 2.9s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: .7s;
+
   @include responsive(tab-land){
     bottom: -13em; right: 3em;
   }

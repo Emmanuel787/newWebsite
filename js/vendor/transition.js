@@ -88,7 +88,7 @@ $(function () {
           }
           window.addEventListener("scroll", bgChanger);
 
-          $('.el-brand, .sbw-btn, .go-home').on('click', function () {
+          $('.el-brand, .sbw-btn').on('click', function () {
             $('.rem-on-trans-box').remove();
             $('.el-hero-section').css({
               "padding-bottom": "7em"

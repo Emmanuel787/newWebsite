@@ -134,7 +134,7 @@ one page smooth scroll easing:start
 
 
 $(".burger").click(function () {
-  $(".hmt-blur-box").fadeIn(1000);
+  $(".hmt-blur-box").fadeIn(500);
 
   $(".hmt-menu-box")
     .delay(500)
@@ -195,7 +195,7 @@ $(".menu-closer").on("click", function () {
 });
 
 $(".menu-closer").click(function () {
-  $(".hmt-blur-box").delay(1200).fadeOut(2000);
+  $(".hmt-blur-box").delay(1200).fadeOut(700);
 
   $(".hmt-menu-box")
     .delay(1000)
@@ -244,7 +244,7 @@ $(".menu-closer").click(function () {
 
 ////////////////////////////////////////////////@2020
 
-$('.el-brand, .sbw-btn').on('click', function () {
+$('.el-brand, .sbw-btn, .go-home').on('click', function () {
   $('.rem-on-trans-box').remove();
   $('.el-hero-section').css({
     "padding-bottom": "7em"

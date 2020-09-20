@@ -1,35 +1,133 @@
+//a-hero-section
+
+//layout
 .a-hero-section{
   @include col(4/4); margin-right: 0;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+}
+//modules
+
+.ahs-center-box{
+  width: 95%;
+  height: 89vh;
+  position: absolute;
+  bottom: 0;
+  @include responsive(tab-land){
+    height: 87vh;
+  }
+
+  .acb-left-box{
+    width: 70%;
+    background-color: #232222;
+    height: 100vh;
+  }
+  .alb-anim{
+    animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1);
+        -webkit-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1);
+          -o-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: .2s;
+
+    @keyframes albAnim {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 70%;
+      }
+    }
+  }
+
 }
 
+.ahs-ab-img{
+  background: none;
+  background-size: 100%;
+  min-width: 40%;
+  min-height: 40em;
+  position: absolute;
+  bottom: -7em; right: 3em;
+  animation: showImg 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: .7s;
+  @include responsive(tab-land){
+    bottom: -13em; right: 3em;
+  }
+
+  @keyframes showImg {
+    0% {
+      background: none;
+    }
+    50% {
+      background: none;
+      background-size: 140%;
+    }
+    100% {
+      background: url(/resources/img/a-me.jpg) no-repeat center center;
+      background-size: 100%;
+    }
+  }
+
+  .aai-overlay-box{
+    width: 0%;
+    height: 40em;
+    right: 0;
+    background: $secondary-color;
+    position: absolute;
+  }
+
+  .aob-anim{
+    animation: go-left 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -moz-animation: go-left 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -webkit-animation: go-left 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          -o-animation: go-left 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+
+    @keyframes go-left {
+      0% {
+        left: 0;
+        width: 0%;
+      }
+      50% {
+        left: 0;
+        width: 100%;
+      }
+      100% {
+        left: 100%;
+        width: 0;
+      }
+    }
+  }
+}
+
+//
 .section-uno{
   @include col(4/4); margin-right: 0;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-top: 12em;
   p{
     @include typo(2em, $white, 700);
   }
 }
 
+//
 .section-dos{
   @include col(4/4); margin-right: 0;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  clear: both;
 
   p{
     @include typo(2em, $white, 700);
   }
 }
 
+//
 .section-tres{
   @include col(4/4); margin-right: 0;
   height: 100vh;

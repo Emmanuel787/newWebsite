@@ -27,10 +27,10 @@ function pageTransition() {
   tl.set(".loading-screen", { bottom: "-100%" });
 }
 
-function contentAnimation() {
-  var tl = gsap.timeline();
-  tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
-}
+// function contentAnimation() {
+//   var tl = gsap.timeline();
+//   tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
+// }
 
 $(function () {
   barba.init({

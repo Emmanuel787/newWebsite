@@ -96,6 +96,18 @@ $(function () {
             $('.el-main-header').fadeOut(500);
           });
 
+          $('.go-home').on('click', function () {
+            // $('.rem-on-trans-box').remove();
+            // $('.el-hero-section').css({
+            //   "padding-bottom": "7em"
+            // });
+            $('.el-main-header').fadeOut(500);
+
+            $('.section-dos').css({
+              "background": "#1f1f1f"
+            });
+          });
+
           $('.wrapper').fadeOut();
 
           $(".el-hero-section").delay(4400).velocity("transition.slideUpIn", 2000);

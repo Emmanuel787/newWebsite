@@ -68,7 +68,7 @@
 
 .emf-bottom-box{
   @include col(4/4); margin-right: 0;
-  background: $white;
+  background: $secondary-color;
   padding: 7em;
 
   @include responsive(tab-land){

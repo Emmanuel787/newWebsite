@@ -244,12 +244,24 @@ $(".menu-closer").click(function () {
 
 ////////////////////////////////////////////////@2020
 
-$('.el-brand, .sbw-btn, .go-home').on('click', function () {
+$('.el-brand, .sbw-btn').on('click', function () {
   $('.rem-on-trans-box').remove();
   $('.el-hero-section').css({
     "padding-bottom": "7em"
   });
   $('.el-main-header').fadeOut(500);
+});
+
+$('.go-home').on('click', function () {
+  // $('.rem-on-trans-box').remove();
+  // $('.el-hero-section').css({
+  //   "padding-bottom": "7em"
+  // });
+  $('.el-main-header').fadeOut(500);
+
+  $('.section-dos').css({
+    "background": "#1f1f1f"
+  });
 });
 
 ////////////////////////////////////////////////@2020

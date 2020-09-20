@@ -1,0 +1,124 @@
+// Burger menu button
+.burger {
+	$width: 3em;
+	$thickness: 2px;
+
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  right: -10em;
+  opacity: 0;
+  top: 0;
+
+	// border-bottom: $thickness solid currentColor;
+	width: $width;
+
+	transition: border-bottom 2s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out;
+
+  position: relative;
+  @include responsive(big-desktop){
+    $width: 4em;
+	  $thickness: 3px;
+  }
+	// Fix for extra space in Firefox
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		border-bottom: $thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    @include responsive(big-desktop){
+      margin-bottom: 10px;
+    }
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		border-bottom: $thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    position: relative;
+    @include responsive(big-desktop){
+      margin-bottom: 10px;
+    }
+	}
+}
+
+.burger {
+  color: white;
+}
+
+//hidden-menu-transition
+.hmt-blur-box{
+  @include col(4/4); margin-right: 0;
+  height: 100vh;
+  background: #131111b3;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 102;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  display: none;
+}
+.hbb-ie{
+  background: #131111;
+}
+
+.hmt-menu-box{
+  @include col(3/4); margin-right: 0;
+  height: 100vh;
+  background: #202121a8;
+  position: fixed;
+  top: 0; right: -100%;
+  z-index: 103;
+  padding-top: 5em;
+  padding-left: 5em;
+  opacity: 0;
+  @include responsive(phone){
+    padding-left: 2em;
+  }
+
+  .hmt-inner-left-box{
+    @include col(1/2, $cycle:2);
+    @include responsive(phone){
+      @include stack();
+      margin-bottom: 4em;
+    }
+  }
+  .hmt-inner-right-box{
+    @include col(1/2, $cycle:2);
+    @include responsive(phone){
+      @include stack();
+    }
+  }
+}
+.hmb-ie{
+  background: #202121;
+}
+
+.menu-closer{
+  @include typo(1.5em, $secondary-color, 500);
+  // width: 2em;
+  // height: 2px;
+  padding: .5em 1em;
+  background: #2c2d2d;
+  position: absolute;
+  right: 2em;
+  top: -10em;
+  opacity: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.fourth-section{
+  @include col(4/4); margin-right: 0;
+  padding: 10em 7em;
+  background: #151618;
+  @include responsive(tab-port){
+    display: none;
+  }
+}

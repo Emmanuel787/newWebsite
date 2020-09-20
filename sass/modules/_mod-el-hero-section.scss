@@ -1,0 +1,85 @@
+.ehs-center-box{
+  padding: 4em;
+}
+
+.hsas-bottom-right-box{
+  width: 40%;
+  padding: 2em;
+  background: $secondary-color;
+  position: absolute;
+  bottom: -10em; right: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @include responsive(tab-land){
+    bottom: -4em;
+  }
+  @include responsive(phone){
+    width: 60%;
+    bottom: -4.5em;
+  }
+
+  .soc-icons-ul{
+    @include col(4/4); margin-right: 0;
+    .siu-li{
+      @include col(1/4, $cycle:4);
+      img{
+        width: 25%;
+        @include responsive(tab-land){
+          width: 30%;
+        }
+        @include responsive(tab-port){
+          width: 40%;
+        }
+        @include responsive(phone){
+          width: 60%;
+        }
+        @include responsive(sm){
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+.hsas-left-box{
+  height: 100vh;
+  padding: 3.5em;
+  position: absolute;
+  top: 0; left: -10em;
+  opacity: 0;
+  @include responsive(phone){
+    left: 2em;
+  }
+  @include responsive(sm){
+    left: 0;
+  }
+}
+
+.hsas-right-box{
+  height: 100vh;
+  padding: 1.5em;
+  position: absolute;
+  bottom: -10em; right: 0;
+  opacity: 0;
+
+
+  .hsas-language-select{
+    margin-top: 30em;
+    margin-right: .1em;
+    @include responsive(big-desktop){
+      margin-top: 50em;
+      margin-right: .1em;
+    }
+    @include responsive(phone){
+      margin-top: 37em;
+    }
+    @include responsive(sm){
+      margin-top: 25em;
+      margin-right: -1em;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.fifth-section{
+  @include col(4/4); margin-right: 0;
+  padding: 15em 7em 7em 7em;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  @include responsive(tab-land){
+    padding: 10em 1.5em 7em 1.5em;
+  }
+  @include responsive(tab-port){
+    padding: 9em 1.5em 7em 1.5em;
+  }
+  @include responsive(phone){
+    padding: 7em 1.5em 7em 1.5em;
+  }
+  @include responsive(sm){
+    padding: 7em 1em;
+  }
+}
+.fs-ie{
+  padding: 10em 7em 7em 7em;
+}

@@ -1,0 +1,151 @@
+@import "buttons/manifest";
+@import "typography/manifest";
+
+//second-section
+.who-am-i-btn{
+  @include defBtn(none, 1px solid #c4c1c1, 1em 2em);
+  @include typo(.8em, #c4c1c1, 300);
+  margin-top: 1.5em;
+  transition: background .3s ease-in-out !important;
+  &:hover{
+    cursor: pointer;
+    background: #32342e;
+    color: $white;
+    border: 1px solid #32342e;
+  }
+  @include responsive(tab-port){
+    @include typo(.8em, #32342e, 300);
+  }
+  @include responsive(phone){
+    width: 90%;
+    margin-bottom: 2em;
+  }
+}
+
+.sbw-btn{
+  @include defBtn(none, 1px solid #c4c1c1, 1em 2em);
+  @include typo(.8em, #c4c1c1, 300);
+  margin-top: 1.5em;
+  transition: all .3s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    background: $white;
+    color: $darko;
+    border: 1px solid $white;
+  }
+  @include responsive(tab-port){
+    @include typo(.8em, $white, 300);
+  }
+  @include responsive(phone){
+    width: 90%;
+    margin: 10em 0 1em 0;
+    margin-left: 5%;
+  }
+}
+
+// .sbw-btn-phone{
+//   @include defBtn(none, 1px solid #c4c1c1, 1em 2em);
+//   @include typo(.8em, #c4c1c1, 300);
+//   margin-top: 4em;
+//   transition: all .3s ease-in-out;
+//   &:hover{
+//     cursor: pointer;
+//     background: $white;
+//     color: $darko;
+//     border: 1px solid $white;
+//   }
+//   @include responsive(tab-port){
+//     @include typo(.8em, $white, 300);
+//   }
+//   @include responsive(phone){
+//     width: 90%;
+//     margin: 3em 0 1em 0;
+//   }
+// }
+
+//third-section
+.tbw-btn{
+  @include defBtn(none, 1px solid #c4c1c1, 1em 2em);
+  @include typo(.8em, #c4c1c1, 300);
+  margin-top: 1.5em;
+  transition: all .3s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    background: #32342e;
+    color: $white;
+    border: 1px solid #32342e;
+  }
+  @include responsive(tab-port){
+    @include typo(.8em, #32342e, 300);
+  }
+  @include responsive(phone){
+    width: 90%;
+    margin-bottom: 2em;
+  }
+}
+
+//fourth-section
+.fcw-btn{
+  @include defBtn(none, 1px solid #c4c1c1, 1em 2em);
+  @include typo(.8em, #c4c1c1, 300);
+  margin-top: 1.5em;
+  transition: all .3s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    background: #32342e;
+    color: $white;
+    border: 1px solid #32342e;
+  }
+  @include responsive(tab-port){
+    @include typo(.8em, #32342e, 300);
+  }
+  @include responsive(phone){
+    width: 90%;
+    margin-bottom: 2em;
+  }
+}
+
+// fab-section
+.fab-btn{
+  @include defBtn(none, 1px solid #c4c1c1, 1em 2em);
+  @include typo(.8em, #c4c1c1, 300);
+  margin-top: 1.5em;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    cursor: pointer;
+    background: $white;
+    color: $darko;
+    border: 1px solid $white;
+  }
+  @include responsive(tab-port){
+    @include typo(.8em, $white, 300);
+  }
+  @include responsive(phone){
+    width: 90%;
+    margin-bottom: 2em;
+  }
+}
+
+//fifth-section
+.fft-s-btn{
+  @include defBtn(none, 1px solid #c4c1c1, 1em 2em);
+  @include typo(.8em, #c4c1c1, 300);
+  margin-top: 1.5em;
+  transition: all .3s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    background: #32342e;
+    color: $white;
+    border: 1px solid #32342e;
+  }
+  @include responsive(tab-port){
+    @include typo(.8em, #32342e, 300);
+  }
+  @include responsive(phone){
+    width: 90%;
+    margin-bottom: 2em;
+  }
+}
+
+

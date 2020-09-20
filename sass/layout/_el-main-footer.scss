@@ -1,0 +1,23 @@
+.el-main-footer{
+  @include col(4/4); margin-right: 0;
+  background: #171616;
+  padding: 7em 7em 0 7em;
+  // margin-bottom: 15em;
+
+  @include responsive(tab-land){
+    padding: 7em 4em 0 4em;
+    // margin-bottom: 15em;
+  }
+  @include responsive(tab-port){
+    padding: 2em 2em 0 2em;
+    // margin-bottom: 13em;
+  }
+  @include responsive(phone){
+    padding: 2em 2em 0 2em;
+    // margin-bottom: 9em;
+  }
+  @include responsive(sm){
+    padding: 2em 1em 0 1em;
+    // margin-bottom: 9em;
+  }
+}

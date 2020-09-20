@@ -1,0 +1,16 @@
+.fths-inner-right-box{
+  @include col(1/2, $cycle:2);
+  float: right;
+  padding-left: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include responsive(phone){
+    @include stack();
+    padding-left: 0;
+  }
+
+  .firb-content-wrapper{
+    @include col(4/4); margin-right: 0;
+  }
+}

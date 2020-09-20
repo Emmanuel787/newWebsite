@@ -1,0 +1,35 @@
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+  #fab {
+    margin-bottom: -40em;
+  }
+}
+.fft-absolute-box{
+  width: 50vw;
+  position: absolute;
+  margin-bottom: 3em;
+  top: -16em;
+  right: 0;
+  float: right;
+  padding: 7em;
+  background: $secondary-color;
+
+  @include responsive(tab-land){
+    padding: 4em;
+  }
+  @include responsive(tab-port){
+    padding: 2em;
+  }
+  @include responsive(phone){
+    padding: 2em;
+    width: 90%;
+    right: 5%;
+    margin-top: -1em;
+  }
+  @include responsive(sm){
+    padding: 1em;
+  }
+}
+
+.fab-ie{
+  margin-top: -40em;
+}

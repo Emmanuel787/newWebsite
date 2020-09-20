@@ -1,0 +1,30 @@
+.typewriter{
+	@include typo(2em, rgba(255,255,255,.70), null);
+  border-right: solid 3px $white;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  // @include responsive(big-desktop){
+  //   @include typo(2em, rgba(255,255,255,.70), null);
+  // }
+}
+
+/* Animation */
+.typewriter{
+  animation: animated-text 1.5s steps(9,end) .5s 1 normal both,
+						 animated-cursor 600ms steps(9,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 177px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: $white;}
+  to{border-right-color: transparent;}
+}

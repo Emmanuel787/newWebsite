@@ -1,0 +1,19 @@
+
+.el-hero-section{
+  @include col(4/4); margin-right: 0;
+  height: 100vh;
+  background: url(/resources/img/hero-bg-3.jpg) no-repeat center center;
+  background-size: cover;
+  background-color: #161616fa;
+  background-blend-mode: multiply;
+  position: relative;
+  z-index: -10;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: padding-bottom .5s ease-in-out;
+  @include responsive(sm){
+    height: 90vh;
+  }
+}

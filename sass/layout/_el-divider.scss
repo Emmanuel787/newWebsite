@@ -1,0 +1,25 @@
+.el-divider{
+  @include col(4/4); margin-right: 0;
+  min-height: 95vh;
+  background: url(/resources/img/setup.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  margin-top: -1em;
+  @include responsive(tab-land){
+    height: 70vh;
+    margin-top: -2em;
+  }
+  @include responsive(tab-port){
+    height: 60vh;
+  }
+  @include responsive(phone){
+    height: 40vh;
+  }
+}
+.ed-ie{
+  min-height: 85vh;
+}
+.ed-re-init{
+  bottom: -55em !important;
+}

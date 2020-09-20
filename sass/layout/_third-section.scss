@@ -1,0 +1,22 @@
+.third-section{
+  @include col(4/4); margin-right: 0;
+  padding: 15em 7em 7em 0;
+  background: $white;
+  @include responsive(tab-land){
+    padding: 12em 7em 5em 0;
+  }
+  @include responsive(tab-port){
+    padding: 12em 4em 8em 0;
+  }
+  @include responsive(phone){
+    padding: 7em 1.5em 7em 1.5em;
+    text-align: center;
+  }
+  @include responsive(sm){
+    padding: 7em 1em;
+    text-align: center;
+  }
+}
+.ts-ie{
+  padding:7em 7em 7em 0;
+}

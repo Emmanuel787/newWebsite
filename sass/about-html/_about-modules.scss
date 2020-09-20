@@ -1,13 +1,4 @@
-//a-hero-section
-
-//layout
-.a-hero-section{
-  @include col(4/4); margin-right: 0;
-  height: 100vh;
-  position: relative;
-}
-//modules
-
+//hero-section
 .ahs-center-box{
   width: 95%;
   height: 89vh;
@@ -108,68 +99,4 @@
       }
     }
   }
-}
-
-//
-.section-uno{
-  @include col(4/4); margin-right: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 12em;
-  p{
-    @include typo(2em, $white, 700);
-  }
-}
-
-//
-.section-dos{
-  @include col(4/4); margin-right: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  clear: both;
-
-  p{
-    @include typo(2em, $white, 700);
-  }
-}
-
-//
-.section-tres{
-  @include col(4/4); margin-right: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  p{
-    @include typo(2em, $white, 700);
-  }
-}
-
-//bg-changer
-.bg-active{
-  background: $white;
-}
-.bg-active-dos{
-  background: firebrick;
-}
-.bg-active-tres{
-  background: $body;
-}
-
-
-//about-hero-section typo
-.alb-title{
-  @include typo(4em, $white, 500);
-  font-family: $hs-title-font;
-  margin-bottom: .5em;
-}
-
-.alb-txt{
-  @include typo(.9em, $white, 300);
-  margin-bottom: 1.5em;
 }

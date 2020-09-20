@@ -297,18 +297,18 @@
 }
 
 .elb-email{
-  @include typo(.8em, $darko, 400);
+  @include typo(.8em, $white, 400);
 }
 
 .elbs-email{
-  @include typo(1em, $darko, 400);
+  @include typo(1em, $white, 400);
 }
 
 .erb-li{
-  @include typo(.8em, $darko, 400);
+  @include typo(.8em, $white, 400);
 }
 .go-topz{
-  @include typo(2em, $darko, 900);
+  @include typo(.9em, $white, 900);
   z-index: 2000;
   &:hover{
     cursor: pointer;
@@ -327,4 +327,5 @@
     @include typo(.8em, $white, 400);
   }
 }
+
 

@@ -55,6 +55,7 @@ $(window).on('load',function () {
     .animate({ bottom: "-5em", opacity: "1" }, 2000, $.bez([0.19, 1, 0.22, 1]));
 
   $(".ehc-center-txt").delay(5500).velocity("transition.slideUpIn", 2000);
+
 });
 //startup loader:end
 

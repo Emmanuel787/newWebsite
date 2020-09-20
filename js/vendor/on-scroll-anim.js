@@ -29,3 +29,4 @@ function onScrollAnim() {
 
 }
 window.addEventListener("scroll", onScrollAnim);
+

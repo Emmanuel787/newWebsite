@@ -143,11 +143,11 @@
 
 //bg-changer
 .bg-active{
-  background: rgb(56, 56, 56);
+  background: $white;
 }
 .bg-active-dos{
-  background: $secondary-color;
+  background: firebrick;
 }
 .bg-active-tres{
-  background: rgb(196, 196, 196);
+  background: $body;
 }

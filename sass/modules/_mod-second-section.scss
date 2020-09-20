@@ -57,6 +57,9 @@
 
 .siw-anim{
   animation: animatedBackground1 3s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-animation: animatedBackground1 3s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-animation: animatedBackground1 3s cubic-bezier(0.19, 1, 0.22, 1);
+         -o-animation: animatedBackground1 3s cubic-bezier(0.19, 1, 0.22, 1);
   animation-delay: .2s;
 
   @keyframes animatedBackground1 {
@@ -71,6 +74,9 @@
 //sirb-overlay-anim
 .soa-anim{
   animation: sirbOverlay 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: sirbOverlay 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -webkit-animation: sirbOverlay 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+         -o-animation: sirbOverlay 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 0s;
 
   @keyframes sirbOverlay {
@@ -107,6 +113,9 @@
 //animate-image-background
 .siw-bg-anim{
   animation: sopaPhoneOverlay 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: sopaPhoneOverlay 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -webkit-animation: sopaPhoneOverlay 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+         -o-animation: sopaPhoneOverlay 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 0s;
 
   @keyframes sopaPhoneOverlay {
@@ -121,6 +130,9 @@
 //animate-overlay
 .sop-anim{
   animation: sopAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: sopAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -webkit-animation: sopAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+         -o-animation: sopAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 0s;
 
   @keyframes sopAnim {

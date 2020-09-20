@@ -1,0 +1,36 @@
+.next-case{
+  @include typo(.8em, $secondary-color, 600);
+  margin-bottom: 2em;
+}
+
+.case-name{
+  @include typo(2em, $white, 900);
+  margin-bottom: 1em;
+  font-family: $title-font;
+  @include responsive(tab-port){
+    @include typo(1.5em, $white, 900);
+  }
+}
+
+.ncb-wrapper{
+  width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:hover{
+    cursor: pointer;
+  }
+  @include responsive(phone){
+    width: 70%;
+  }
+
+  .next-case-btn{
+    @include typo(.9em, $white, 500);
+    border-bottom: 1px solid #31312f;
+    padding: 0 0 1em 0;
+    transition: all .3s ease-in-out;
+    &:hover{
+      border-bottom: 1px solid $white;
+    }
+  }
+}

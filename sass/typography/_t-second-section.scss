@@ -1,0 +1,10 @@
+.sbw-title{
+  @include typo(1.5em, $white, 900);
+  margin-bottom: 1em;
+  font-family: $title-font;
+}
+
+.sbw-txt{
+  @include typo(.9em, #e2e2e2, 400);
+  margin-bottom: 1em;
+}

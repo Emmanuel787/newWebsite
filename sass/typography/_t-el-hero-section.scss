@@ -1,0 +1,103 @@
+.ehc-center-txt{
+  @include typo(6em, $white, 500);
+  font-family: $hs-title-font;
+  line-height: 1em;
+  position: relative;
+  display: none;
+  @include responsive(big-desktop){
+    @include typo(10em, $white, 500);
+  }
+  @include responsive(sm){
+    @include typo(4em, $white, 500);
+    margin-top: -1em;
+  }
+}
+
+.hlb-span-line{
+  width: 7%;
+  height: 0%;
+  background: $secondary-color;
+  position: absolute;
+  margin-left: -1.3em;
+  margin-top: 1em;
+  transform-origin: bottom;
+
+  @include responsive(big-desktop){
+    background: $secondary-color;
+    width: .7%;
+    height: 10%;
+    margin-left: -.1em;
+    margin-top: 1.5em;
+  }
+  @include responsive(tab-land){
+    background: $white;
+  }
+  @include responsive(tab-port){
+    display: none;
+  }
+  @include responsive(sm){
+    display: block;
+    margin-left: -2.5em;
+  }
+}
+.hsl-anim-loop{
+  animation: hslAnimLoop 3s cubic-bezier(0.19, 1, 0.22, 1) forwards infinite;
+  animation-delay: 7s;
+
+  @keyframes hslAnimLoop {
+    0% {
+      height: 0%;
+    }
+    100% {
+      opacity: 0;
+      height: 10%;
+    }
+  }
+}
+
+.hlb-txt-hor{
+  @include typo(.8em, $white, 900);
+  font-family: $title-font;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin-top: 35em;
+  margin-left: -2em;
+
+  @include responsive(big-desktop){
+    @include typo(2em, $white, 400);
+    margin-top: 25em;
+    margin-left: -.7em;
+  }
+  @include responsive(phone){
+    margin-top: 44em;
+  }
+  @include responsive(sm){
+    margin-top: 23em;
+    margin-left: -3.5em;
+  }
+}
+
+.hls-english-active{
+  @include typo(.9em, $white, 700);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-decoration-line: underline;
+  &:hover{
+    cursor: pointer;
+  }
+  @include responsive(big-desktop){
+    @include typo(2em, $white, 500);
+  }
+}
+
+.hls-spanish-deactive{
+  @include typo(.9em, $secondary-color, 300);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  &:hover{
+    cursor: pointer;
+  }
+  @include responsive(big-desktop){
+    @include typo(2em, $secondary-color, 500);
+  }
+}

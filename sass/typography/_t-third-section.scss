@@ -1,0 +1,10 @@
+.tbw-title{
+  @include typo(1.5em, $secondary-color, 900);
+  margin-bottom: 1em;
+  font-family: $title-font;
+}
+
+.tbw-txt{
+  @include typo(.9em, #757575, 400);
+  margin-bottom: 1em;
+}

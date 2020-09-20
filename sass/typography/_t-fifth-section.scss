@@ -1,0 +1,25 @@
+.fft-s-title{
+  @include typo(1.5em, $secondary-color, 900);
+  margin-top: 3em;
+  margin-bottom: .5em;
+  font-family: $title-font;
+
+  @include responsive(phone){
+    margin-top: 5em;
+  }
+}
+
+.fft-s-txt{
+  @include typo(.9em, #757575, 400);
+  margin-bottom: 1em;
+}
+
+.fab-title{
+  @include typo(1.5em, $white, 900);
+  margin-bottom: 1em;
+  font-family: $title-font;
+}
+.fab-txt{
+  @include typo(.9em, #e2e2e2, 400);
+  margin-bottom: 1em;
+}

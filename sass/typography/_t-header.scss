@@ -1,0 +1,14 @@
+.el-brand{
+  @include typo(1.2em, $white, 600);
+  position: relative;
+  opacity: 0;
+  left: -10em;
+  font-family: 'Source Code Pro', monospace;
+  // margin-left: 1.5em;
+  @include responsive(big-desktop){
+    @include typo(2.5em, $white, 600);
+  }
+  @include responsive(tab-land){
+    margin-left: 0;
+  }
+}

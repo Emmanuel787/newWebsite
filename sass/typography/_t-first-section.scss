@@ -1,0 +1,44 @@
+.fs-title{
+  @include typo(1.5em, $secondary-color, 300);
+  margin-bottom: .5em;
+  @include responsive(phone){
+    margin-bottom: 1em;
+  }
+}
+
+.fs-sub-title{
+  @include typo(2em, $darko, 900);
+  line-height: 1em;
+  margin-bottom: .4em;
+  font-family: $title-font;
+  @include responsive(tab-land){
+    @include typo(3em, #5a5a5a, 900);
+  }
+  @include responsive(tab-port){
+    @include typo(2.5em, #5a5a5a, 900);
+  }
+  @include responsive(phone){
+    @include typo(1.5em, #5a5a5a, 900);
+    margin-bottom: 1em;
+  }
+  @include responsive(sm){
+    @include typo(1.5em, #5a5a5a, 900);
+  }
+}
+
+.fs-txt{
+  @include typo(.9em, #757575, 400);
+  margin-bottom: 1em;
+}
+
+.skills-boxes{
+  .sb-title{
+    @include typo(1.5em, $secondary-color, 900);
+    margin-bottom: .5em;
+    font-family: $title-font;
+  }
+  .sb-txt{
+    @include typo(.9em, #757575, 400);
+    margin-bottom: 1em;
+  }
+}

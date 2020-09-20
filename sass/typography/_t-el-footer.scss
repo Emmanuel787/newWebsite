@@ -1,0 +1,49 @@
+.elb-state{
+  @include typo(.8em, $secondary-color, 900);
+  margin-bottom: 2em;
+}
+
+.elb-address{
+  @include typo(.8em, $white, 400);
+  margin-bottom: 2em;
+}
+.elb-number{
+  @include typo(.8em, $white, 400);
+}
+
+.erb-logo{
+  @include typo(1.5em, $secondary-color, 900);
+  font-family: $title-font;
+  @include responsive(tab-port){
+    margin-top: 2em;
+  }
+}
+
+.ebb-li{
+  @include typo(.7em, $white, 400);
+}
+
+.elb-email{
+  @include typo(.8em, $white, 400);
+}
+
+.elbs-email{
+  @include typo(1em, $white, 400);
+}
+
+.erb-li{
+  @include typo(.8em, $white, 400);
+}
+.go-topz{
+  @include typo(.9em, $white, 900);
+  z-index: 2000;
+  transition: color .3s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    color: $secondary-color - 20;
+  }
+  @include responsive(tab-port){
+    float: right;
+    margin-top: -.4em;
+  }
+}

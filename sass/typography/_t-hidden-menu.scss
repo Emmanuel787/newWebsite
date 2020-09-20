@@ -1,0 +1,7 @@
+
+.hmt-li{
+  @include typo(1em, $white, 400);
+  @include responsive(tab-port){
+    @include typo(.8em, $white, 400);
+  }
+}

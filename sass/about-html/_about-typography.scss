@@ -3,6 +3,9 @@
   @include typo(4em, $white, 500);
   font-family: $hs-title-font;
   margin-bottom: .5em;
+  @include responsive(tab-port){
+    @include typo(3em, $white, 500);
+  }
 }
 
 .alb-txt{

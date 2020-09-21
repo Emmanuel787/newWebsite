@@ -7,6 +7,9 @@
   @include responsive(tab-land){
     height: 87vh;
   }
+  @include responsive(phone){
+    width: 100%;
+  }
 
   .acb-left-box{
     width: 70%;
@@ -16,6 +19,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include responsive(tab-land){
+      width: 80%;
+    }
+    @include responsive(tab-port){
+     padding: 5em;
+    }
+    @include responsive(phone){
+      width: 100%;
+      @include stack();
+      padding: 0;
+    }
 
     .alb-text-box{
       width: 40%;
@@ -23,10 +37,10 @@
     }
   }
   .alb-anim{
-    animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1);
-      -moz-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1);
-        -webkit-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1);
-          -o-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1);
+    animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -moz-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -webkit-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          -o-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: .2s;
 
     @keyframes albAnim {
@@ -43,17 +57,13 @@
 
 .ahs-ab-img{
   background: none;
-  background-size: 100%;
+  background-size: cover;
   min-width: 40%;
-  min-height: 40em;
+  height: 40em;
   position: absolute;
   bottom: -7em; right: 1em;
   animation: showImg 2.9s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: .7s;
-
-  @include responsive(tab-land){
-    bottom: -13em; right: 3em;
-  }
 
   @keyframes showImg {
     0% {
@@ -61,7 +71,7 @@
     }
     50% {
       background: none;
-      background-size: 140%;
+      background-size: 150%;
     }
     100% {
       background: url(/resources/img/a-me.jpg) no-repeat center center;

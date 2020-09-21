@@ -1,11 +1,17 @@
 .ehc-center-txt{
-  @include typo(6em, $white, 500);
+  @include typo(9em, $white, 500);
   font-family: $hs-title-font;
   line-height: 1em;
   position: relative;
   display: none;
   @include responsive(big-desktop){
     @include typo(10em, $white, 500);
+  }
+  @include responsive(tab-port){
+    @include typo(8em, $white, 500);
+  }
+  @include responsive(phone){
+    @include typo(7em, $white, 500);
   }
   @include responsive(sm){
     @include typo(4em, $white, 500);

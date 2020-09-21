@@ -75,7 +75,7 @@
     padding: 7em 4em;
   }
   @include responsive(tab-port){
-    padding: 4em;
+    padding: 4em 2em;
   }
   @include responsive(phone){
     padding: 2em;

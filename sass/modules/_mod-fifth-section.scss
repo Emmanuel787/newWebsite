@@ -17,6 +17,7 @@
     padding: 4em;
   }
   @include responsive(tab-port){
+    width: 60%;
     padding: 2em;
   }
   @include responsive(phone){

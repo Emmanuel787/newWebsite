@@ -7,15 +7,15 @@
 }
 
 .fs-sub-title{
-  @include typo(2em, $darko, 900);
+  @include typo(2em, #5a5a5a, 900);
   line-height: 1em;
   margin-bottom: .4em;
   font-family: $title-font;
   @include responsive(tab-land){
-    @include typo(3em, #5a5a5a, 900);
+    //
   }
   @include responsive(tab-port){
-    @include typo(2.5em, #5a5a5a, 900);
+    //
   }
   @include responsive(phone){
     @include typo(1.5em, #5a5a5a, 900);

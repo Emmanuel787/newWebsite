@@ -5,8 +5,11 @@
   @include responsive(tab-land){
     padding: 4em 4em 12em 4em;
   }
+  @include responsive(tab-port){
+    padding: 7em 2em 12em 2em;
+  }
   @include responsive(phone){
-    padding: 7em 1.5em 3em 1.5em;
+    padding: 10em 1.5em 3em 1.5em;
     text-align: center;
   }
   @include responsive(sm){

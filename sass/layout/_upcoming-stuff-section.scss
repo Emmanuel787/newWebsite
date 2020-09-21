@@ -3,6 +3,9 @@
   padding: 7em 7em 0 7em;
   background: #171616;
   @include responsive(tab-land){
+    padding: 7em 4em 2em 4em;
+  }
+  @include responsive(tab-port){
     padding: 7em 2em 2em 2em;
   }
   @include responsive(phone){

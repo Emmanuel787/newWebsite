@@ -12,16 +12,29 @@
       width: 50vw;
       background: url(/resources/img/des.jpg) no-repeat center center;
       background-size: 150%;
-      min-height: 35em;
+      height: 35em;
       position: absolute;
       top: -7em;
       left: 0;
+      @include responsive(tab-land){
+        height: 40em;
+        top: -5em;
+      }
+      @include responsive(tab-port){
+        background: url(/resources/img/team-port.jpg) no-repeat center center;
+        // background-size: cover;
+        // top: -17em;
+        // width: 50vw;
+      }
 
       .tiw-overlay-anim{
         width: 100%;
         height: 35em;
         background: $white;
         float: left;
+        // @include responsive(tab-land){
+        //   height: 40em;
+        // }
       }
     }
   }
@@ -55,6 +68,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include responsive(tab-port){
+      padding-left: 3em;
+    }
+    justify-content: center;
     @include responsive(phone){
       @include stack();
       padding-left: 0;
@@ -67,7 +84,7 @@
 }
 
 .tiw-anim{
-  animation: animatedBackground2 3s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: animatedBackground2 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 0s;
 
   @keyframes animatedBackground2 {

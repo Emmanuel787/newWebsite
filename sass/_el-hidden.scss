@@ -28,3 +28,14 @@
 .invisible-annoying-error-killer{
   display: none;
 }
+
+.transition-fx{
+  @include col(4/4); margin-right: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: $primary-color;
+  z-index: 8000;
+  position: fixed;
+  display: none;
+}

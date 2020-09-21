@@ -30,7 +30,6 @@ $(document).ready(function () {
 
   function contentAnimation() {
     var tl = gsap.timeline();
-    // tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
   }
 
   $(function () {
@@ -57,12 +56,12 @@ $(document).ready(function () {
             //re-init code
             $(window).scrollTop(0);
 
+            //Rellax re-init
             var rellax = new Rellax(".rellax", {
               center: false,
             });
-
+            //BgChanger re-init
             function bgChanger() {
-
               var docScrollBg = $(document).scrollTop(),
               sectionUno = $(".section-uno").offset().top - 300;
               sectionDos = $(".section-dos").offset().top - 300;
@@ -97,15 +96,12 @@ $(document).ready(function () {
                 "padding-bottom": "7em"
               });
               $('.el-main-header').fadeOut(500);
+              $('.transition-fx').fadeIn(500);
             });
 
             $('.go-home').on('click', function () {
-              // $('.rem-on-trans-box').remove();
-              // $('.el-hero-section').css({
-              //   "padding-bottom": "7em"
-              // });
               $('.el-main-header').fadeOut(500);
-
+              $('.transition-fx').fadeIn(300);
             });
 
             $('.wrapper').fadeOut();

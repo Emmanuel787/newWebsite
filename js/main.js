@@ -251,15 +251,12 @@ $('.el-brand, .sbw-btn').on('click', function () {
     "padding-bottom": "7em"
   });
   $('.el-main-header').fadeOut(500);
+  $('.transition-fx').fadeIn(500);
 });
 
 $('.go-home').on('click', function () {
-  // $('.rem-on-trans-box').remove();
-  // $('.el-hero-section').css({
-  //   "padding-bottom": "7em"
-  // });
   $('.el-main-header').fadeOut(500);
-
+  $('.transition-fx').fadeIn(500);
 });
 
 ////////////////////////////////////////////////@2020

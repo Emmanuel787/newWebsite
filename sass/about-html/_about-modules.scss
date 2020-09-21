@@ -1,112 +1,31 @@
-//hero-section
-.ahs-center-box{
-  width: 95%;
-  height: 89vh;
+//hero section
+.ahs-ct-box{
+  width: 0%;
+  height: 30em;
+  background: $secondary-color;
   position: absolute;
-  bottom: 0;
-  @include responsive(tab-land){
-    height: 87vh;
-  }
-  @include responsive(phone){
-    width: 100%;
-  }
-
-  .acb-left-box{
-    width: 70%;
-    background-color: #232222;
-    height: 100vh;
-    padding: 6em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include responsive(tab-land){
-      width: 80%;
-    }
-    @include responsive(tab-port){
-     padding: 5em;
-    }
-    @include responsive(phone){
-      width: 100%;
-      @include stack();
-      padding: 0;
-    }
-
-    .alb-text-box{
-      width: 40%;
-      position: absolute;
-    }
-  }
-  .alb-anim{
-    animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-      -moz-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        -webkit-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-          -o-animation: albAnim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: .2s;
-
-    @keyframes albAnim {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 70%;
-      }
-    }
-  }
-
+  left: 0;
 }
 
-.ahs-ab-img{
-  background: none;
-  background-size: cover;
-  min-width: 40%;
-  height: 40em;
-  position: absolute;
-  bottom: -7em; right: 1em;
-  animation: showImg 2.9s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  animation-delay: .7s;
-
-  @keyframes showImg {
-    0% {
-      background: none;
-    }
-    50% {
-      background: none;
-      background-size: 150%;
-    }
-    100% {
-      background: url(/resources/img/a-me.jpg) no-repeat center center;
-      background-size: 100%;
-    }
-  }
-
-  .aai-overlay-box{
-    width: 0%;
-    height: 40em;
-    right: 0;
-    background: $secondary-color;
-    position: absolute;
-  }
-
-  .aob-anim{
-    animation: go-left 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-      -moz-animation: go-left 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        -webkit-animation: go-left 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-          -o-animation: go-left 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+.acb-anim{
+    animation: go-left-two 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -moz-animation: go-left-two 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -webkit-animation: go-left-two 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          -o-animation: go-left-two 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 1s;
 
-    @keyframes go-left {
+    @keyframes go-left-two {
       0% {
         left: 0;
         width: 0%;
       }
       50% {
         left: 0;
-        width: 100%;
+        width: 50%;
       }
       100% {
-        left: 100%;
+        left: 50%;
         width: 0;
       }
     }
   }
-}

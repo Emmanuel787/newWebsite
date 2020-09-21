@@ -1,9 +1,41 @@
 //hero-section
 .a-hero-section{
-  @include col(4/4); margin-right: 0;
-  height: 100vh;
+  background: url(/resources/img/a-me-hero.jpg) no-repeat center center;
+  background-size: cover;
+  background-color: rgb(37, 37, 37);
+  background-blend-mode: overlay;
+  align-items: center;
   position: relative;
+  margin-left: 5%;
+  margin-top: 5em;
+  height: 100vh;
+  display: flex;
+  width: 0%;
 }
+.ahs-anim{
+    animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -moz-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -webkit-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          -o-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: .5s;
+
+    @keyframes go-left {
+      0% {
+        left: 0;
+        width: 0%;
+      }
+      50% {
+        left: 0;
+        width: 90%;
+        margin-left: 8%;
+      }
+      100% {
+        left: 0;
+        width: 90%;
+        margin-left: 5%;
+      }
+    }
+  }
 
 //section-uno
 .section-uno{

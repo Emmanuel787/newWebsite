@@ -60,7 +60,7 @@
   clear: both;
 
   p{
-    @include typo(2em, $white, 700);
+    @include typo(2em, $darko, 700);
   }
 }
 
